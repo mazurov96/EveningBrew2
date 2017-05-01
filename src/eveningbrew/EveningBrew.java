@@ -13,7 +13,7 @@ import java.sql.Statement;
  * @author Nikita
  */
 public class EveningBrew {
-
+/*
     // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/new_schema";
     private static final String user = "BrewUser";
@@ -24,10 +24,11 @@ public class EveningBrew {
     private static Statement stmt;
     private static ResultSet rs;
    
-
+*/
   public static void main(String args[]) {
-      
-        String query = "select Color from beer_main";
+      startFrame frame=  new startFrame();
+      frame.setVisible(true);
+     /*   String query = "select Color from beer_main";
  
         try {
             // opening database connection to MySQL server
@@ -48,13 +49,13 @@ public class EveningBrew {
             sqlEx.printStackTrace();
         } finally {
             //close connection ,stmt and resultset here
-            try { con.close(); } catch(SQLException se) { /*can't do anything */ }
-            try { stmt.close(); } catch(SQLException se) { /*can't do anything */ }
-            try { rs.close(); } catch(SQLException se) { /*can't do anything */ }
+            try { con.close(); } catch(SQLException se) {  }
+            try { stmt.close(); } catch(SQLException se) {  }
+            try { rs.close(); } catch(SQLException se) {  }
         }
         
     
-
+*/
     }
 
     
