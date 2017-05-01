@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package eveningbrew;
 
 import java.sql.Connection;
@@ -11,20 +7,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 /**
  *
- * @author User
+ * @author Nikita
  */
 public class EveningBrew {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-         // JDBC URL, username and password of MySQL server
-    private static final String url = "jdbc:mysql://localhost:3306/new_schema";
+    // JDBC URL, username and password of MySQL server
+    private static final String url = "jdbc:mysql://localhost:3306/test";
     private static final String user = "root";
-    private static final String password = "";
+    private static final String password = "1234";
     
     // JDBC variables for opening and managing connection
     private static Connection con;
@@ -33,9 +26,8 @@ public class EveningBrew {
    
 
   public static void main(String args[]) {
-        String pop="mazda6";
+      
         String query = "select Name_Beer from beer_main";
-              
  
         try {
             // opening database connection to MySQL server
@@ -45,12 +37,12 @@ public class EveningBrew {
             stmt = con.createStatement();
  
             // executing SELECT query
-            stmt.executeQuery(query);
- 
+               
+            rs= stmt.executeQuery(query);
             while (rs.next()) {
                 String name = rs.getString(2);
-                System.out.println("Total number of books in the table : " + name);
-            }
+                System.out.println("Name Beer : " + name);
+           }
  
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
@@ -58,12 +50,12 @@ public class EveningBrew {
             //close connection ,stmt and resultset here
             try { con.close(); } catch(SQLException se) { /*can't do anything */ }
             try { stmt.close(); } catch(SQLException se) { /*can't do anything */ }
-            //try { rs.close(); } catch(SQLException se) { /*can't do anything */ }
+            try { rs.close(); } catch(SQLException se) { /*can't do anything */ }
         }
         
     
 
     }
-    }
+
     
 }
