@@ -34,7 +34,7 @@ public class startFrame extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Desktop\\pivo.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/pivo.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, -10, 400, 320);
 
