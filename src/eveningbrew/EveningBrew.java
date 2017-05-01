@@ -15,9 +15,9 @@ import java.sql.Statement;
 public class EveningBrew {
 
     // JDBC URL, username and password of MySQL server
-    private static final String url = "jdbc:mysql://localhost:3306/test";
-    private static final String user = "root";
-    private static final String password = "1234";
+    private static final String url = "jdbc:mysql://localhost:3306/new_schema";
+    private static final String user = "BrewUser";
+    private static final String password = "12345678";
     
     // JDBC variables for opening and managing connection
     private static Connection con;
@@ -27,7 +27,7 @@ public class EveningBrew {
 
   public static void main(String args[]) {
       
-        String query = "select Name_Beer from beer_main";
+        String query = "select Color from beer_main";
  
         try {
             // opening database connection to MySQL server
@@ -40,7 +40,7 @@ public class EveningBrew {
                
             rs= stmt.executeQuery(query);
             while (rs.next()) {
-                String name = rs.getString(2);
+                String name = rs.getString(1);
                 System.out.println("Name Beer : " + name);
            }
  
