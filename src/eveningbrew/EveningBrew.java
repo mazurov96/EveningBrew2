@@ -6,14 +6,26 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+ 
 
 
-/**
- *
- * @author Nikita
- */
+
 public class EveningBrew {
-
+     static startFrame frame= new startFrame();
+     public static void closeFrame() {
+         frame.setVisible(false);}
+      public static void openFrame() {
+         frame.setVisible(true);}
+    public static void main(String args[]) {
+     
+        
+          frame.setVisible(true);
+           
+     
+            
+}
+/*
+    
     // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/new_schema";
     private static final String user = "BrewUser";
@@ -48,14 +60,16 @@ public class EveningBrew {
             sqlEx.printStackTrace();
         } finally {
             //close connection ,stmt and resultset here
-            try { con.close(); } catch(SQLException se) { /*can't do anything */ }
-            try { stmt.close(); } catch(SQLException se) { /*can't do anything */ }
-            try { rs.close(); } catch(SQLException se) { /*can't do anything */ }
+            try { con.close(); } catch(SQLException se) {  }
+            try { stmt.close(); } catch(SQLException se) {  }
+            try { rs.close(); } catch(SQLException se) {  }
         }
         
     
 
     }
 
-    
+ */   
 }
+
+
