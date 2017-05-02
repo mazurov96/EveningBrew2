@@ -53,7 +53,7 @@ public class startFrame extends javax.swing.JFrame {
         jButton2.setText("О приложении");
         jButton2.setActionCommand("Начать работу");
         jPanel2.add(jButton2);
-        jButton2.setBounds(390, 430, 230, 110);
+        jButton2.setBounds(430, 430, 230, 110);
 
         jButton6.setBackground(new java.awt.Color(51, 51, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -66,7 +66,7 @@ public class startFrame extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton6);
-        jButton6.setBounds(390, 540, 230, 110);
+        jButton6.setBounds(430, 540, 230, 110);
 
         jButton7.setBackground(new java.awt.Color(51, 51, 255));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -74,7 +74,7 @@ public class startFrame extends javax.swing.JFrame {
         jButton7.setText("Показ карты города");
         jButton7.setActionCommand("Начать работу");
         jPanel2.add(jButton7);
-        jButton7.setBounds(390, 310, 230, 120);
+        jButton7.setBounds(430, 310, 230, 120);
 
         jButton8.setBackground(new java.awt.Color(51, 51, 255));
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -82,7 +82,7 @@ public class startFrame extends javax.swing.JFrame {
         jButton8.setText("Начать работу");
         jButton8.setActionCommand("Начать работу");
         jPanel2.add(jButton8);
-        jButton8.setBounds(390, 200, 230, 110);
+        jButton8.setBounds(430, 200, 230, 110);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/pivo2.jpg"))); // NOI18N
         jPanel2.add(jLabel1);
