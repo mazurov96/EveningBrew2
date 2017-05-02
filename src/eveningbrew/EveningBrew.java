@@ -8,10 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
-/**
- *
- * @author Nikita
- */
+
 public class EveningBrew {
 /*
     // JDBC URL, username and password of MySQL server
