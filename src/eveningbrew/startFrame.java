@@ -36,16 +36,19 @@ public class startFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(121212, 2121212));
-        setPreferredSize(new java.awt.Dimension(1200, 800));
+        setMaximumSize(new java.awt.Dimension(1100, 700));
+        setMinimumSize(new java.awt.Dimension(1100, 700));
+        setPreferredSize(new java.awt.Dimension(1100, 700));
 
+        jPanel2.setForeground(new java.awt.Color(255, 51, 102));
+        jPanel2.setMaximumSize(new java.awt.Dimension(1100, 700));
         jPanel2.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 255, 0));
         jLabel2.setText("Главное меню");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(80, 30, 280, 170);
+        jLabel2.setBounds(40, -30, 280, 170);
 
         jButton2.setBackground(new java.awt.Color(51, 51, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -53,7 +56,7 @@ public class startFrame extends javax.swing.JFrame {
         jButton2.setText("О приложении");
         jButton2.setActionCommand("Начать работу");
         jPanel2.add(jButton2);
-        jButton2.setBounds(430, 430, 230, 110);
+        jButton2.setBounds(430, 340, 230, 110);
 
         jButton6.setBackground(new java.awt.Color(51, 51, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -66,7 +69,7 @@ public class startFrame extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton6);
-        jButton6.setBounds(430, 540, 230, 110);
+        jButton6.setBounds(430, 450, 230, 110);
 
         jButton7.setBackground(new java.awt.Color(51, 51, 255));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -74,15 +77,14 @@ public class startFrame extends javax.swing.JFrame {
         jButton7.setText("Показ карты города");
         jButton7.setActionCommand("Начать работу");
         jPanel2.add(jButton7);
-        jButton7.setBounds(430, 310, 230, 120);
+        jButton7.setBounds(430, 220, 230, 120);
 
         jButton8.setBackground(new java.awt.Color(51, 51, 255));
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 51, 51));
         jButton8.setText("Начать работу");
-        jButton8.setActionCommand("Начать работу");
         jPanel2.add(jButton8);
-        jButton8.setBounds(430, 200, 230, 110);
+        jButton8.setBounds(430, 110, 230, 110);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto/pivo2.jpg"))); // NOI18N
         jPanel2.add(jLabel1);
@@ -92,11 +94,11 @@ public class startFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 820, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
         );
 
         pack();
